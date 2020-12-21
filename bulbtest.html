@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        body{
+            background-color: black;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center><img src="img/on.png"  id="bulb"  alt=""></center>
+    <center>
+        <button onclick="turnOn()" >Turn On</button>
+        <button onclick="turnOff()" >Turn Off</button>
+    </center>
+
+    <script>
+        
+        function turnOn(){
+            document.getElementById('bulb').src = "img/on.png";
+        }
+
+        function turnOff(){
+            document.getElementById('bulb').src = "img/off.png";
+        }
+
+    </script>
+</body>
+</html>

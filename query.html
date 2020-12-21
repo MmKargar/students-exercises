@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        .left {
+            float: left;
+            background-color: aqua;
+            padding: 20px;
+            width: 20%;
+        }
+
+        .main {
+            float: left;
+            background-color: brown;
+            padding: 20px;
+            width: 60%;
+        }
+
+        .right {
+            float: left;
+            background-color: chartreuse;
+            padding: 20px;
+            width: 20%;
+        }
+        @media (max-width: 700px) {
+            .left , .main , .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        Left Content
+    </div>
+    <div class="main">
+        Main Content
+    </div>
+    <div class="right">
+        Right Content
+    </div>
+</body>
+
+</html>

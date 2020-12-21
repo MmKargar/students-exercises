@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Responsive Page</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+
+        .header {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(216, 216, 216);
+        }
+
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .menu a {
+            background-color: rgb(216, 216, 216);
+            padding: 15px;
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: rgb(216, 216, 216);
+            width: 20%;
+            float: left;
+            margin-top: 10px;
+            padding: 15px;
+        }
+
+        .footer{
+            background-color: rgb(216, 216, 216);
+            padding: 15px;
+            float: left;            
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media screen and (max-width : 800px) {
+            .menu , .left , .right{
+                width: 100%;                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hello World</h1>
+    </div>
+    <div class="menu">
+        <a href="">link1</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+        <a href="">link4</a>
+    </div>
+
+    <div class="main">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus cumque tempore quam, facilis
+            consequatur exercitationem quos. Consequatur quam ut, reiciendis alias accusamus optio laborum in soluta
+            numquam, magni illum?</p>
+    </div>
+
+    <div class="right">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, optio? Facilis, velit eligendi?
+            Tenetur nihil quos temporibus magni id nisi a, fugit ad iure aliquid ea quod quia vero quo?</p>
+    </div>
+
+    <div class="footer">
+        <h4>Footer Here</h4>
+    </div>
+</body>
+
+</html>

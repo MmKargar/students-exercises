@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+        }
+        .lg-6{
+            display: block;
+            float: left;
+            width: 50%;
+            height: 400px;
+        }
+        .bg-1{
+            background-color: brown;
+        }
+        .bg-2{
+            background-color: dodgerblue;
+        }
+        .lg-6-box{
+            width: 50%;
+            height: 200px;
+            float: left;
+            padding: 15px;
+        }
+        .container{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lg-6 bg-1" >
+        <div class="container">
+            content here
+        </div>
+    </div>
+    <div class="lg-6 bg-2" >
+        <div class="lg-6-box ">
+            content two
+        </div>
+        <div class="lg-6-box bg-1">
+            content two
+        </div>
+        <div class="lg-6-box bg-1">
+            content two
+        </div>
+        <div class="lg-6-box bg-1">
+            content two
+        </div>
+    </div>
+</body>
+</html>

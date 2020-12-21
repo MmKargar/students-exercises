@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action=""  name="testForm"
+    oninput="sum(a,b,c,d)" 
+    >
+        num 1 <br>
+        <input type="number" name="a" value="0" > <br>
+        num 2 <br>
+        <input type="text" name="b" value="0" maxlength="5"> <br>
+        num 3 <br>
+        <input type="range" name="c" min="0" value="90" max="100"> <br>
+
+        tel input : <br>
+        <input type="tel" name="tel"  list="phoneList" > <br>
+
+        url input : <br>
+        <input type="url" > <br>
+
+        output is : 
+        <output id="d" >0</output>
+
+    </form>
+
+    <button>submit</button>
+    <br>
+
+    <datalist id="phoneList" >
+        <option value="09159648843"></option>
+        <option value="09159648855"></option>
+        <option value="09159648889"></option>
+    </datalist>
+
+    <script>
+        function sum(a,b,c,d){
+            document.getElementById('d').value = parseInt(a.value)+parseInt(b.value)+parseInt(c.value);
+        }
+
+        function logInput(event){
+            console.log(event);
+        }
+    </script>
+</body>
+
+</html>

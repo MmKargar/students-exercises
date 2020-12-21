@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            animation: bodyBgColor 15s infinite;
+        }
+        @keyframes bodyBgColor {
+            0% {
+                background-color: aqua;
+            }
+            25% {
+                background-color: crimson;
+            }
+            50% {
+                background-color: violet;
+            }
+            75% {
+                background-color: yellowgreen;
+            }
+            100% {
+                background-color: aqua;
+            }
+        }
+
+        .trans{
+            width: 200px;
+            height: 150px;
+            background-color: burlywood;
+            animation: moveTrans 1s infinite;
+            position: absolute;
+        }
+        
+        @keyframes moveTrans {
+            from{
+                background-color: cornsilk;
+                right: -50px;
+            }
+
+            to{
+                background-color: cornflowerblue;
+                right: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="trans" >
+        some text
+    </div>
+
+</body>
+</html>

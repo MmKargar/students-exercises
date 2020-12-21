@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <p>location is: </p>
+        latitude : <span id="lat" >latitude here</span> <br>
+        longitude : <span id="lng" >  longitude here</span> <br>
+        <p><span id="error"></span></p>                
+    </div>
+    <br>
+    <button onclick="showLocaiton()" >show Location</button>
+    <script>
+        var lat = document.getElementById('lat');
+        var lng = document.getElementById('lng');
+
+        function showLocaiton(){
+            if(navigator){
+                navigator.geolocation.getCurrentPosition(showPosition , showError);
+            }else{
+                alert('your browser not supportin GeoLocation');
+            }
+        }
+
+        function showPosition(position){
+            console.log(position);
+            lat.innerText = position.coords.latitude;
+            lng.innerText = position.coords.longitude;
+        }
+
+        function showError(error){
+            console.log(error);
+            document.getElementById('error').innerText = error.message;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Style the element with the id "myHeader" */
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Style all elements with the class name "city" */
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Difference Between Class and ID</h2>
+    <p>An HTML page can only have one unique id applied to one specific element, while a class name can be applied to
+        multiple elements.</p>
+
+    <!-- A unique element -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple similar elements -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <div id="place" style="padding: 20px; background-color:dodgerblue; color: white;">
+        Will Change
+    </div>
+
+    <br>
+    <button onclick="hide()">Click To Hide</button>
+
+    <button onclick="displayNote()">Click To Write</button>
+
+    <script>
+        function hide() {
+            document.getElementById('myHeader').style.display = 'none';
+        }
+
+        function displayNote() {
+            document.getElementById("place").innerHTML = "The world is beauty!";
+            document.getElementById('place').style.textAlign = "center";            
+            document.getElementById('place').style.backgroundColor = 'tomato' ;
+
+        }
+
+    </script>
+</body>
+
+</html>

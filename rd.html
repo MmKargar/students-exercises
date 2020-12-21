@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2e9a276843.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: dodgerblue;
+            text-align: center;
+        }
+
+        .fas {
+            font-size: 10em;
+        }
+
+        [type=radio] {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        [type=radio]:checked+i {
+            color: white;
+        }
+
+        [type=radio]+i {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input type="radio" name="gender" value="male">
+        <i class="fas fa-male"></i>
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female">
+        <i class="fas fa-female"></i>
+    </label>
+</body>
+
+</html>

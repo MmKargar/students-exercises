@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 2em;
+        }
+        td , table , th {
+            border: 1px solid tomato;
+        }
+
+        td , th {
+            padding: 20px;
+            position: relative;
+        }
+
+        table{
+            overflow: hidden;
+        }
+
+        tr:hover{
+            background: yellowgreen;
+        }
+
+        td:hover::after{
+            background: yellowgreen;
+            content: '';
+            width: 100%;
+            height: 1000px;     
+            position: absolute;       
+            left: 0;
+            top: -500px;
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>title1</th>
+            <th>title2</th>
+            <th>title3</th>
+            <th>title4</th>
+            <th>title5</th>
+        </thead> 
+        <tbody>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+            <tr>
+                <td>content 1</td>
+                <td>content 2</td>
+                <td>content 3</td>
+                <td>content 4</td>
+                <td>content 5</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

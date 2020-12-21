@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        body{
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://google.com"  oninput="process(password , cPassword)" >
+
+        <select name="city" >
+            <option value="birjand"> بیرجند</option>
+            <option value="tehran"  >تهران</option>
+            <option value="bojnord">بجنورد</option>
+            <option value="shiraz">شیراز</option>
+            <option value="mashhad">مشهد</option>
+        </select>
+        <br>
+        <br>
+        address: <br>
+        <textarea style="width: 500px; height: 300px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit dolorum atque, eius reprehenderit quos, dolorem quas ab ad quae exercitationem veniam eveniet eaque expedita totam blanditiis sed veritatis. Est.
+        </textarea>
+
+        <br>
+        <input type="text"  list="cities" name="lCity" >
+        <br>
+        <input type="submit"  >
+
+        <datalist id="cities" >
+            <option value="birjand"> بیرجند</option>
+            <option value="tehran"  >تهران</option>
+            <option value="bojnord">بجنورد</option>
+            <option value="shiraz">شیراز</option>
+            <option value="mashhad">مشهد</option>
+        </datalist>
+        <br>
+        field a <br>
+        <input type="text" name="a"  value="0" > <br>
+        field b <br>
+        <input type="text" name="b" value="0" > <br>
+
+        <input type="range" name="c" min="0" max="100" value="80" >
+        <br>
+        password :  <br>
+        <input type="password" name="password"> <br>
+        <small id="clabel" style="color:tomato">کلمه عبور با تکرار آن مطابقت ندارد</small>
+        <br>
+        Confirm Password : <br>
+        <input type="password" name="cPassword">
+
+        outPut:
+        <output name="d"></output>
+    </form>
+
+    <script>
+        function process(password , cPassword){
+            if(password.value != cPassword.value){
+                document.getElementById('clabel').style.display = 'block';
+                return;
+            }
+            document.getElementById('clabel').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

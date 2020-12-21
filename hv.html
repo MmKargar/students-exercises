@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+        table {
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        td,
+        th {
+            border: 1px solid #999;
+            padding: 10px;
+            position: relative;
+        }
+
+        th {
+            background-color: #fff;
+        }
+
+        tr:hover{
+            background-color: #ffa;
+        }
+
+        /* td:hover::after {
+            background-color: #ffa;
+            content: '';
+            height: 10000px;
+            left: 0;
+            position: absolute;
+            top: -500px;
+            width: 100%;
+            z-index: -1;
+        } */
+
+        td:hover::after{
+            background-color: #ffa;
+            z-index: -1;
+            content: '';
+            width: 100%;
+            height: 1000px;
+            top: -500px;
+            left: 0;
+            position: absolute;
+        }
+
+        body {
+            margin: 8em;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Size</th>
+            <th>xxs</th>
+            <th>xs</th>
+            <th>s</th>
+            <th>m</th>
+            <th>l</th>
+            <th>xl</th>
+        </tr>
+        <tr>
+            <th>neck</th>
+            <td>14</td>
+            <td>14.5</td>
+            <td>15</td>
+            <td>15.5</td>
+            <td>16</td>
+            <td>16.5</td>
+        </tr>
+        <tr>
+            <th>chest</th>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>length</th>
+            <td>26.5</td>
+            <td>27</td>
+            <td>27.5</td>
+            <td>28</td>
+            <td>28.5</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <th>waist</th>
+            <td>17.5</td>
+            <td>18.5</td>
+            <td>19.5</td>
+            <td>20.5</td>
+            <td>21.5</td>
+            <td>22.5</td>
+        </tr>
+        <tr>
+            <th>sleeve</th>
+            <td>32.75</td>
+            <td>33</td>
+            <td>33.25</td>
+            <td>33.5</td>
+            <td>33.75</td>
+            <td>34</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        p#line1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="line1">LINE ONE -Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptatum nisi tempora
+        explicabo alias nam ullam tenetur quas velit officiis repudiandae perspiciatis odit, iure provident deleniti ex
+        nobis assumenda. Similique?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error optio, repudiandae ea ipsa cum blanditiis nisi
+        quidem necessitatibus nesciunt atque exercitationem repellendus delectus enim neque veniam hic tempore alias
+        laudantium.</p>
+
+
+    <div id="demo">
+
+    </div>
+
+    <button onclick="hide()">Hide Line</button>
+    <button onclick="show()">show</button>
+
+
+    <script>
+
+        function hide() {
+            document.getElementById('line1').style.display = 'none';
+        }
+
+        function show(){
+            document.getElementById('demo').innerHTML = "<h2>Article Title</h2><p>atque exercitationem repellendus </p>";
+        }
+        
+    </script>
+
+</body>
+
+</html>

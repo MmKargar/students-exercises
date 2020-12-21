@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(121, 121, 121);
+        }
+
+        .header{
+            text-align: center;
+            background-color: rgb(209, 209, 209);
+            padding: 25px;
+            width: 100%;
+        }
+
+        .left , .main , .right , .footer , .header{
+            float: left;
+        }
+        
+        .left{
+            width: 20%;
+        }
+
+        .left a{
+            display: block;
+            background-color:  rgb(209, 209, 209);
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .main{
+            width: 60%;
+            padding: 10px;
+        }
+
+        .right{
+            width: 20%;
+            background-color: rgb(209, 209, 209);
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .footer{
+            width: 100%;
+            padding: 15px;
+            background-color: rgb(209, 209, 209);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media(max-width:700px){
+            .left , .main , .right{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        Site Header
+    </div>
+
+    <div class="left">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+
+    <div class="main">
+        <h2>Article Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi minus quo optio debitis totam maiores sequi, quod iste assumenda, voluptate omnis consequuntur, est voluptates accusamus laborum placeat ipsa! Soluta.</p>
+    </div>
+
+    <div class="right">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, nam corporis esse accusamus cumque in asperiores facilis</p>
+    </div>
+
+    <div class="footer">
+        Site Footer
+    </div>
+
+    <div class="city">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil sed dolor aut at alias nostrum reprehenderit quibusdam eveniet repellendus! Similique totam molestias quasi quidem quod reprehenderit libero pariatur iste.</p>
+    </div>
+
+    <div class="city">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil sed dolor aut at alias nostrum reprehenderit quibusdam eveniet repellendus! Similique totam molestias quasi quidem quod reprehenderit libero pariatur iste.</p>
+    </div>
+    <div class="city">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil sed dolor aut at alias nostrum reprehenderit quibusdam eveniet repellendus! Similique totam molestias quasi quidem quod reprehenderit libero pariatur iste.</p>
+    </div>
+    <div class="city">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil sed dolor aut at alias nostrum reprehenderit quibusdam eveniet repellendus! Similique totam molestias quasi quidem quod reprehenderit libero pariatur iste.</p>
+    </div>
+
+    <script>
+        var x = document.getElementsByClassName('city');
+        console.log(x);
+    </script>
+
+</body>
+</html>
